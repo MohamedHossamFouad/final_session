@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/MohamedHossamFouad/final_session.git'
+                git branch: 'main', url: 'https://github.com/MohamedHossamFouad/final_session.git'
             }
         }
         stage('Run Script') {
